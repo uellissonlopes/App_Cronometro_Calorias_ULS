@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.made.uellisson.cronometro_calorias_mwg.activities.Activity_Principal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tempo"
+            android:textSize="24sp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/white" />
+
+        <Chronometer
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cronomotro"
+            android:textSize="30sp"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:textColor="@android:color/background_dark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="@string/calorias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="24sp"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:text="@string/cal_inicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_contador_calorias"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:background="@android:drawable/editbox_dropdown_light_frame"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@android:color/background_dark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:text="@string/play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_play"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:text="@string/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/bt_reset"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ib_proximo"
+            android:background="@drawable/bt_next_br"
+            android:elevation="0dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

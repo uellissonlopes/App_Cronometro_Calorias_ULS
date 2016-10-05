@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medico"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.made.uellisson.cronometro_calorias_mwg.activities.Activity_Medico"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/iv_foto"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textAlignment="gravity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:text="@string/nome_medico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/text_view_med" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:paddingLeft="5dp"
+            android:id="@+id/tv_nome_medico" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:text="@string/telefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_tel"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_telefone"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:paddingLeft="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:text="@string/voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_voltar" />
+    </LinearLayout>
+</LinearLayout>
